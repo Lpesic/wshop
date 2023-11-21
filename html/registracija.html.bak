@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-shop mobiteli</title>
+    <!-- link rel="stylesheet" href="../css/stil.css" -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+</head>
+
+<body>
+    <div class="w3-container">
+        <nav class="navigacija" id="navigacija">
+            <div class="w3-bar w3-black">
+                <a href="index.html" class="w3-bar-item w3-button">Početna stranica</a>
+                <a href="sve_ponude.html" class="w3-bar-item w3-button">Sve ponude</a>
+                <a href="kontakt.html" class="w3-bar-item w3-button">Kontakt</a>
+				<a href="" class="w3-bar-item w3-button">Registracija</a>
+            </div>               
+        </nav>
+    </div>
+    <div class="w3-container">
+    <h1>Web shop - mobiteli</h1>    
+
+        <form action="action_page.php">
+  <div class="container w3-red">
+    <h1>Registracija</h1>
+    <p>Molimo ispunite ovaj obrazac za kreiranje računa.</p>
+    <hr>
+	
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Unesite Email" name="email" id="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Unesite Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Ponovite Password</b></label>
+    <input type="password" placeholder="Ponovite Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+	
+    <p>Stvaranjem računa pristajete na naše <a href="#">Uvjete i Privatnosti</a>.</p>
+    <button type="submit" class="registerbtn">Stvori račun</button>
+  </div>
+
+  <div class="container signin">
+    <p>Već imate račun? <a href="#">Prijavi se</a>.</p>
+  </div>
+</form>
+    </div>
+</div>
+    <div id="korisnik_unos"></div>
+    <div id="ispis"></div>
+    <script>
+        document.write("<div class='w3-container w3-black'>");
+        document.write("Web sjedište <i>Web-shop mobiteli</i>, izrađeno je u sklopu kolegija Programiranje za internet");
+        document.write("</div>");
+        ispisiPodatke();
+    </script>
+</body>
+</html>
